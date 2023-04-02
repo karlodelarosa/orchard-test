@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 @import './helpers/variables';
 @import './globals/globals';
 
@@ -26,6 +30,17 @@
     .wrapper {
         width: 1200px;
         margin: 0 auto;
+    }
+}
+
+.gallery {
+    img {
+        transition: all 0.2s ease;
+        cursor: pointer;
+
+        &:hover {
+            filter: brightness(0.8);
+        }
     }
 }
 
@@ -89,7 +104,7 @@ article.quote {
                     transition: all .1s ease-in;
 
                     &:hover {
-                        filter:brightness(0.9)
+                        filter:brightness(0.8)
                     }
                 }
             }
@@ -117,6 +132,14 @@ article.quote {
                 letter-spacing: 1px;
                 padding-bottom: 5px;
                 border-bottom: 1px solid $color-accent;
+                cursor: pointer;
+                padding: 5px 2px;
+                transition: all 0.1s ease;
+
+                &:hover {
+                    background-color: $color-accent;
+                    color: white;
+                }
             }
         }
     }

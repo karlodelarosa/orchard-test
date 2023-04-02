@@ -1,5 +1,4 @@
-// const gulp = require('gulp')
-const { task, src, dest, watch, series } = require('gulp')
+const { src, dest, watch, series } = require('gulp')
 const concat = require('gulp-concat')
 const autoprefixer = require('gulp-autoprefixer')
 const uglify = require('gulp-uglify')
@@ -12,7 +11,7 @@ const styles = () => {
         .pipe(sass({outputStyled: 'nested'}))
         .pipe(autoprefixer('last 2 versions'))
         .pipe(rename('main.css'))
-        .pipe(dest('./dist/css'))
+        .pipe(dest('./public/css'))
 }
 
 // Scripts
@@ -20,7 +19,7 @@ const scripts = () => {
     return src('./src/js/*.js')
         .pipe(concat('main.js'))
         .pipe(uglify())
-        .pipe(dest('./dist/js/'))
+        .pipe(dest('./public/js/'))
 }
 
 

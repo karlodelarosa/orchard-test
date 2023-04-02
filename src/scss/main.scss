@@ -1,0 +1,65 @@
+@import './helpers/variables';
+@import './globals/globals';
+
+.wrapper {
+    width: 100%;
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .wrapper {
+        width: 768px;
+        margin: 0 auto;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .wrapper {
+        width: 992px;
+        margin: 0 auto;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1440px and up) */
+@media only screen and (min-width: 1440px) {
+    .wrapper {
+        width: 1200px;
+        margin: 0 auto;
+    }
+}
+
+article.description {
+    font-weight: lighter;
+    margin-bottom: 50px;
+
+    h1 {
+        color: white;
+        font-size: 25px;
+        border-bottom: 1px solid white;
+        padding-block: 0 10px;
+        margin-bottom: 20px;
+        letter-spacing: 1px;
+    }
+
+    p {
+        color: $color-neutral;
+        font-size: 18px;
+        line-height: 30px;
+    }
+}
+
+article.quote {
+    font-weight: bold;
+        letter-spacing: 1px;
+
+    h2 {
+        color: $color-accent;
+        margin-bottom: 20px;
+    }
+
+    p {
+        color: white;
+        line-height: 30px;
+    }
+}

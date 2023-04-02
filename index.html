@@ -10,7 +10,41 @@
     <title>Orchard Test</title>
 </head>
 <body>
-    <h1>Test</h1>
+    <main class="wrapper">
+        <section class="h-screen flex items-center">
+            <div class="grid grid-cols-6 gap-[30px]">
+                <!-- Images -->
+                <div class="col-span-4">
+                    <div class="flex flex-row justify-between">
+                        <img src="src/assets/component-01/Image-01.jpg" alt="Orchard Logo">
+
+                        <div class="flex flex-col justify-between">
+                            <img src="src/assets/component-01/Image-02.jpg" alt="Orchard Logo">
+                            <img src="src/assets/component-01/Image-03.jpg" alt="Orchard Logo">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Description -->
+                <div class="col-span-2">
+                    <article class="description">
+                        <h1>ANSWER YOUR BODY'S NEEDS</h1>
+                        <p>The way ingredients are sourced affects the way we nourish our bodies. Author Mark Schatzer
+                            believes our body naturally develops and appetite for the foods and nutrients it needs to be
+                            healthy, but that artificial flavorings are getting in the way. This can be reversed by
+                            focusing on high-quality ingredients and being mindful as your appetite guides you to
+                            consume according to your body's needs.</p>
+                    </article>
+
+                    <article class="quote">
+                        <h2>BE MINDFUL</h2>
+                        <p>Sourcing local or organic food is a good way to start being more mindful about what you're
+                            cooking and eating.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <script type="module" src="dist/js/main.js"></script>
 </body>

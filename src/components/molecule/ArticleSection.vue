@@ -9,6 +9,7 @@
                             :key="key" 
                             :src="src" 
                             :class="{ 'row-span-2': key === 0 }" 
+                            @click="openModal(src)"
                             alt="Orchard Images"
                         >
                     </div>
@@ -30,13 +31,23 @@
         </section>
 </template>
 <script>
+import { useStore } from 'vuex'
 import { articleData } from '@/js/mock/ArticleData'
 
 export default {
     name: 'ArticleSection',
     setup() {
+        const store = useStore()
+        const openModal = (src) => {
+            console.info(src)
+            store.dispatch('modal/openModal', {
+                source: src
+            })
+        }
+
         return {
-            articleData
+            articleData,
+            openModal
         }
     }
 }

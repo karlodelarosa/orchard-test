@@ -1,22 +1,23 @@
 <template>
-    <section class="h-screen flex items-center">
-            <div class="grid grid-cols-6 gap-[30px]">
+    <section class="xl:min-h-screen flex md:items-center">
+            <div class="grid grid-cols-1 xl:grid-cols-6 gap-[30px]">
                 <!-- Images -->
-                <div class="col-span-4">
-                    <div class="grid grid-rows-1 grid-flow-col gap-4 gallery    ">
+                <div class="md:col-span-4">
+                    <div class="grid md:grid-rows-1 md:grid-flow-col gap-4 gallery    ">
                         <img 
                             v-for="(src, key) in articleData.images" 
                             :key="key" 
                             :src="src" 
                             :class="{ 'row-span-2': key === 0 }" 
                             @click="openModal(src)"
+                            class="w-full"
                             alt="Orchard Images"
                         >
                     </div>
                 </div>
 
                 <!-- Description -->
-                <div class="col-span-2">
+                <div class="md:col-span-2">
                     <article class="description">
                         <h1>{{ articleData.title }}</h1>
                         <p>{{ articleData.content }}</p>
@@ -39,7 +40,6 @@ export default {
     setup() {
         const store = useStore()
         const openModal = (src) => {
-            console.info(src)
             store.dispatch('modal/openModal', {
                 source: src
             })

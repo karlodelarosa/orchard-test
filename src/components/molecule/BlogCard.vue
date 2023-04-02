@@ -1,5 +1,5 @@
 <template>
-    <div class="blog-container w-full grid grid-cols-3 gap-5">
+    <div class="blog-container w-full grid md:grid-cols-2 md:gap-7 lg:grid-cols-3 lg:gap-5">
         <div class="card" v-for="(data, key) in blogs" :key="key">
             <div class="image">
                 <img @click="redirect(data.url)" :src="data.image.web" class="w-full" alt="Orchard blog images">
@@ -23,7 +23,7 @@ export default {
         const publicPath = process.env.BASE_URL
 
         const redirect = (url) => {
-            console.info(url)
+            console.log(url)
         }
 
         const parseImg = (imgName) => {

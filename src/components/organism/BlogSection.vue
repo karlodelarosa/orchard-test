@@ -1,11 +1,10 @@
 <template>
-    <section class="h-screen flex items-center">
-            <div class="blog-section">
-                <h2>{{ text }}</h2>
-
-                <BlogCard/>
-            </div>
-        </section>
+    <section class="xl:min-h-screen flex items-center">
+        <div class="blog-section">
+            <h2>{{ text }}</h2>
+            <BlogCard/>
+        </div>
+    </section>
 </template>
 <script>
 import { toRefs } from 'vue'

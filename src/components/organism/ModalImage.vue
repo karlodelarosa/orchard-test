@@ -1,6 +1,6 @@
 <template>
     <transition name="fade">
-        <div v-if="isOpen" class="w-full h-screen bg-black/80 fixed top-0 left-0 flex items-center justify-center">
+        <div v-if="isOpen" class="w-full h-screen bg-black/80 fixed top-0 left-0 flex items-center justify-center overflow-auto">
             <div class="modal">
                 <div class="flex justify-between border-b border-gray-100 px-5 py-4">
                     <div class="flex flex-row items-center gap-1">

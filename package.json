@@ -4,7 +4,8 @@
   "description": "Orchard test project",
   "main": "index.js",
   "scripts": {
-    "dev": "npm install && gulp"
+    "dev": "npm install && gulp",
+    "start": "node server.js"
   },
   "keywords": [],
   "author": "",

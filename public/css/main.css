@@ -159,11 +159,12 @@ article.quote p {
   padding-bottom: 5px;
   border-bottom: 1px solid #cf1430;
   cursor: pointer;
-  padding: 5px 2px;
+  padding: 5px 5px;
   -webkit-transition: all 0.1s ease;
   transition: all 0.1s ease;
 }
 .blog-section .blog-container .card a:hover {
   background-color: #cf1430;
   color: white;
+  border-radius: 5px;
 }

@@ -133,12 +133,13 @@ article.quote {
                 padding-bottom: 5px;
                 border-bottom: 1px solid $color-accent;
                 cursor: pointer;
-                padding: 5px 2px;
+                padding: 5px 5px;
                 transition: all 0.1s ease;
 
                 &:hover {
                     background-color: $color-accent;
                     color: white;
+                    border-radius: 5px;
                 }
             }
         }

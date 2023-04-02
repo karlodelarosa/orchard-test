@@ -2,7 +2,7 @@
     <div class="blog-container w-full grid grid-cols-3 gap-5">
         <div class="card" v-for="(data, key) in blogs" :key="key">
             <div class="image">
-                <img @click="redirect(data.url)" :src="data.image.web" class="w-full" alt="Lobster dish with sparkling water">
+                <img @click="redirect(data.url)" :src="data.image.web" class="w-full" alt="Orchard blog images">
             </div>
             <div class="content">
                 <h3>{{ data.title }}</h3>

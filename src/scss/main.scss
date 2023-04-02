@@ -63,3 +63,61 @@ article.quote {
         line-height: 30px;
     }
 }
+
+.blog-section {
+    width: 100%;
+
+    h2 {
+        font-size: 40px;
+        color: white;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .blog-container {
+        .card {
+            width: 100%;
+
+            .image {
+                width: 100%;
+                overflow: hidden;
+                border-bottom: 4px solid $color-accent;
+                cursor: pointer;
+                margin-bottom: 20px;
+
+                img {
+                    transition: all .1s ease-in;
+
+                    &:hover {
+                        filter:brightness(0.9)
+                    }
+                }
+            }
+
+            .content {
+                margin-bottom: 20px;
+                h3 {
+                    font-size: 16px;
+                    font-weight: bold;
+                    color: white;
+                    letter-spacing: 1px;
+                    margin-bottom: 10px;
+                }
+
+                p {
+                    color: $color-neutral-300;
+                    line-height: 30px;
+                }
+            }
+
+            a {
+                font-size: 15px;
+                font-weight: 600;
+                color: white;
+                letter-spacing: 1px;
+                padding-bottom: 5px;
+                border-bottom: 1px solid $color-accent;
+            }
+        }
+    }
+}

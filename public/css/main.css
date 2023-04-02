@@ -19,6 +19,13 @@ body {
   background-color: #0e1414;
 }
 
+.modal {
+  background-color: white;
+  border-radius: 20px;
+  width: 500px;
+  height: 400px;
+}
+
 .wrapper {
   width: 100%;
 }

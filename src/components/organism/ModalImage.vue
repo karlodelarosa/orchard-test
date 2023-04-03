@@ -24,7 +24,7 @@
                 </div>
 
                 <div class="px-10 py-5 text-gray-600">
-                    <img :src="src" alt="Orchard Image" class="mx-auto">
+                    <img width="640" height="360" :src="src" alt="Orchard Image" class="mx-auto">
                 </div>
 
                 <div class="px-5 py-4 flex justify-end">

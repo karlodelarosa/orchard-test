@@ -17,15 +17,12 @@
 </template>
 <script>
 import { blogData } from '@/js/mock/BlogData'
+import { redirect } from '@/js/composable/redirect'
 
 export default {
     name: 'BlogCard',
     setup() {
         const publicPath = process.env.BASE_URL
-
-        const redirect = (url) => {
-            console.log(url)
-        }
 
         const parseImg = (imgName) => {
             return '@/assets/component-02/' + imgName

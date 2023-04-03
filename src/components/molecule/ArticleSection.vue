@@ -11,6 +11,7 @@
                             :class="{ 'row-span-2': key === 0 }" 
                             @click="openModal(src)"
                             width="640" height="360" 
+                            loading="lazy"
                             class="w-full"
                             alt="Orchard Images"
                         >

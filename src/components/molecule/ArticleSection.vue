@@ -1,9 +1,9 @@
 <template>
     <section class="xl:min-h-screen flex md:items-center">
-            <div class="grid grid-cols-1 xl:grid-cols-6 gap-[30px]">
-                <!-- Images -->
-                <div class="md:col-span-4">
-                    <div class="grid md:grid-rows-1 md:grid-flow-col gap-4 gallery    ">
+        <div class="grid grid-cols-1 xl:grid-cols-6 gap-[30px]">
+            <!-- Images -->
+            <div class="md:col-span-4">
+                <div class="grid md:grid-rows-1 md:grid-flow-col gap-4 gallery    ">
                         <img 
                             v-for="(src, key) in articleData.images" 
                             :key="key" 
@@ -15,23 +15,23 @@
                             class="w-full"
                             alt="Orchard Images"
                         >
-                    </div>
-                </div>
-
-                <!-- Description -->
-                <div class="md:col-span-2">
-                    <article class="description">
-                        <h1>{{ articleData.title }}</h1>
-                        <p>{{ articleData.content }}</p>
-                    </article>
-
-                    <article class="quote">
-                        <h2>{{ articleData.warning.title }}</h2>
-                        <p>{{ articleData.warning.content }}</p>
-                    </article>
                 </div>
             </div>
-        </section>
+
+            <!-- Description -->
+            <div class="md:col-span-2">
+                <article class="description">
+                    <h1>{{ articleData.title }}</h1>
+                    <p>{{ articleData.content }}</p>
+                </article>
+
+                <article class="quote">
+                    <h2>{{ articleData.warning.title }}</h2>
+                    <p>{{ articleData.warning.content }}</p>
+                </article>
+            </div>
+        </div>
+    </section>
 </template>
 <script>
 import { useStore } from 'vuex'

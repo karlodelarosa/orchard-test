@@ -2,7 +2,7 @@
     <section class="xl:min-h-screen flex items-center">
         <div class="blog-section">
             <h2>{{ text }}</h2>
-            <BlogCard/>
+            <BlogCard />
         </div>
     </section>
 </template>

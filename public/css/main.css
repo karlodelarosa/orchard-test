@@ -28,20 +28,6 @@ section {
     padding-bottom: 0;
   }
 }
-.modal {
-  background-color: white;
-  border-radius: 20px;
-  width: 500px;
-}
-
-.bg-accent {
-  background-color: #cf1430;
-}
-
-.text-accent {
-  color: #cf1430;
-}
-
 .fade-enter-active,
 .fade-leave-active {
   -webkit-transition: opacity 0.5s ease;
@@ -92,6 +78,20 @@ section {
 .gallery img:hover {
   -webkit-filter: brightness(0.8);
           filter: brightness(0.8);
+}
+
+.modal {
+  background-color: white;
+  border-radius: 20px;
+  width: 500px;
+}
+
+.bg-accent {
+  background-color: #cf1430;
+}
+
+.text-accent {
+  color: #cf1430;
 }
 
 article.description {

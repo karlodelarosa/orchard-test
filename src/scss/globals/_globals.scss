@@ -32,20 +32,6 @@ section {
     }
 }
 
-.modal {
-    background-color: white;
-    border-radius: 20px;
-    width: 500px;
-}
-
-.bg-accent {
-    background-color: $color-accent;
-}
-
-.text-accent {
-    color: $color-accent;
-}
-
 .fade-enter-active,
 .fade-leave-active {
   transition: opacity 0.5s ease;

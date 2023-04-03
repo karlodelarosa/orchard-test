@@ -51,6 +51,20 @@
     }
 }
 
+.modal {
+    background-color: white;
+    border-radius: 20px;
+    width: 500px;
+}
+
+.bg-accent {
+    background-color: $color-accent;
+}
+
+.text-accent {
+    color: $color-accent;
+}
+
 article.description {
     font-weight: lighter;
     margin-bottom: 50px;
